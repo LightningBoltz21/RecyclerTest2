@@ -35,19 +35,7 @@ class MainActivity : AppCompatActivity() {
                         countriesList = response.body()?.result as List<Countries.Result>
                         recycler.adapter = RecyclerAdapter(countriesList)
 
-                        /*var size = countriesList.size - 1
 
-                        for(i in 0..size) {
-                            if (countriesList.get(i).name.equals(insertCountry.text.toString())) {
-                                countryList.add(
-                                    Country(
-                                        countriesList.get(i).name,
-                                        countriesList.get(i).code
-                                    )
-                                )
-                                break
-                            }
-                        }*/
                     }
                 }
             }
